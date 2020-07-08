@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+* {
+  box-sizing: border-box;
+}
+.container {
+  font-family: "Cinzel", serif;
+}
+.flex {
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ul li {
+  margin-left: 20px;
+}
