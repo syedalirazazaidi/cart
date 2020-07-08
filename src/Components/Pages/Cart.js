@@ -14,7 +14,7 @@ export const Cart = () => {
           display: "flex",
         }}
       >
-        <b>Total Amount : ({total.toFixed(2)})</b>
+        <b>Total Amount : ({total.toFixed(1)})</b>
       </span>
       <hr />
       {item ? (
