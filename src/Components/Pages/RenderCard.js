@@ -68,20 +68,22 @@ export const RenderCard = ({ product }) => {
                     </i>
                   </span>
                 </b>
-                <b>
-                  <span
-                    onClick={() => {
-                      decrease(product);
-                    }}
-                  >
-                    <i
-                      style={{ color: "blue", marginTop: "1px" }}
-                      className="medium material-icons"
+                {product.quantity > 1 && (
+                  <b>
+                    <span
+                      onClick={() => {
+                        decrease(product);
+                      }}
                     >
-                      arrow_drop_down
-                    </i>
-                  </span>
-                </b>
+                      <i
+                        style={{ color: "blue", marginTop: "1px" }}
+                        className="medium material-icons"
+                      >
+                        arrow_drop_down
+                      </i>
+                    </span>
+                  </b>
+                )}
               </Grid>
               <Grid item>
                 <b>

@@ -16,7 +16,8 @@ export const Cart = () => {
       >
         <b>Total Amount : ({total.toFixed(2)})</b>
       </span>
-      <hr />
+    <hr />
+      
       {item ? (
         cartItems.map((productItem, index) => (
           <RenderCard key={index} product={productItem} />
